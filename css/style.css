@@ -8164,6 +8164,11 @@ h1, h2, h3, h4, h5,
 .text-primary {
   color: #ffbd39 !important; }
 
+.navbar-toggler .oi-menu {
+    color: orange; /* Set the color to orange */
+  }
+ 
+
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
@@ -8292,7 +8297,7 @@ h1, h2, h3, h4, h5,
       text-decoration: none;
       color: #ffbd39;
       outline: none !important; }
-  .ftco-navbar-light.scrolled {
+   .ftco-navbar-light.scrolled {
     position: fixed;
     right: 0;
     left: 0;
@@ -8368,6 +8373,22 @@ h1, h2, h3, h4, h5,
   font-size: 24px;
   text-transform: uppercase; }
 
+
+/*   
+.navbar {
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    
+  }
+    .navbar .container {
+      color: #fff !important;
+      background: #ffbd39;
+      border: none !important;
+      background-color: black;
+    } */
+  
 .hero h3.vr {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
@@ -8393,6 +8414,13 @@ h1, h2, h3, h4, h5,
     .hero h3.vr {
       opacity: 0;
       display: none; } }
+
+/* .owl-carousel .owl-stage-outer {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+} */
+
+
 
 .owl-carousel {
   position: relative; }
@@ -8627,6 +8655,18 @@ h1, h2, h3, h4, h5,
         background: rgba(255, 255, 255, 0.4); }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
+
+.overlay-container {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  overflow: auto; /* Enable both vertical and horizontal scrolling */
+  z-index: 999; /* Ensure it's above other content */
+}
+          
 
 .hero-wrap {
   width: 100%;

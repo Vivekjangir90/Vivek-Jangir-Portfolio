@@ -5,7 +5,7 @@
 	<title>Vivek Jangir Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<link href="images/name_logo3.png" rel="icon">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -114,6 +114,28 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".hero").on("touchstart touchmove", function (event) {
+					var startY = event.originalEvent.touches[0].pageY;
+					var startScroll = $(this).scrollTop();
+
+					if (startScroll <= 0 && startY > 150) {
+						event.preventDefault();
+					}
+
+					$(this).on("touchmove", function (event) {
+						var currentY = event.originalEvent.touches[0].pageY;
+						var currentScroll = $(this).scrollTop();
+
+						if (currentScroll <= 0 && currentY > startY) {
+							event.preventDefault();
+						}
+					});
+				});
+			});
+		</script>
 	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -132,8 +154,9 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>I'm Vivek Jangir, and I'm really passionate about data science. 
-								I love learning new things and want to be part of different projects to grow my skills in this area.</p>
+							<p>I'm Vivek Jangir, and I'm really passionate about data science.
+								I love learning new things and want to be part of different projects to grow my skills
+								in this area.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>Vivek Jangir</span></li>
 								<li class="d-flex"><span>Date of birth:</span> <span> 29 December 2002</span></li>
@@ -150,7 +173,8 @@
 								<span class="number" data-number="20">0</span>
 								<span>+ Project complete</span>
 							</p>
-							<p><a href="images/VIVEK JANGIR7.pdf" download="VIVEK JANGIR" class="btn btn-primary py-3 px-3">Download CV</a></p>
+							<p><a href="images/VIVEK JANGIR7.pdf" download="VIVEK JANGIR"
+									class="btn btn-primary py-3 px-3">Download CV</a></p>
 
 						</div>
 					</div>
@@ -663,7 +687,8 @@
 						style="background-image: url(My_Projects/assets/port/movieNestle_0.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="My_Projects/movieNestle_url.html">Web Development with API Integration and Data Analysis</a></h3>
+							<h3><a href="My_Projects/movieNestle_url.html">Web Development with API Integration and Data
+									Analysis</a></h3>
 							<!-- <span>Web Design</span> -->
 						</div>
 					</div>
@@ -703,7 +728,8 @@
 						style="background-image: url(My_Projects/assets/port/house_prediction_0.jpeg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="My_Projects/house_prediction_url.html">House Prediction Using Machine Learning</a></h3>
+							<h3><a href="My_Projects/house_prediction_url.html">House Prediction Using Machine
+									Learning</a></h3>
 							<span>Machine Learning</span>
 						</div>
 					</div>
@@ -768,7 +794,7 @@
 						</div>
 					</div>
 				</div>
-<!-- 				
+				<!-- 				
 				<div class="col-md-8">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(My_Projects/assets/port/movieNestle_0.png);">
@@ -829,7 +855,7 @@
 		</div>
 	</section>
 
-<!-- 
+	<!-- 
 	<section class="ftco-section" id="blog-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-5">
@@ -945,7 +971,8 @@
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>I'm <span>Available</span> for Job</h2>
-					<p>Persist in your endeavors, for each iteration brings you closer to optimization. Let the algorithm of perseverance guide you through every iteration</p>
+					<p>Persist in your endeavors, for each iteration brings you closer to optimization. Let the
+						algorithm of perseverance guide you through every iteration</p>
 					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
 				</div>
 			</div>
@@ -958,7 +985,8 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Contact</h1>
 					<h2 class="mb-4">Contact Me</h2>
-					<p>Feel free to reach out to me anytime; I'm always open to connecting and discussing opportunities.</p>
+					<p>Feel free to reach out to me anytime; I'm always open to connecting and discussing opportunities.
+					</p>
 				</div>
 			</div>
 
@@ -1053,9 +1081,12 @@
 						<ul class="list-unstyled">
 							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
 							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Skills</a></li>
-							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a>
+							</li>
+							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Skills</a>
+							</li>
+							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -1063,11 +1094,16 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Skills</h2>
 						<ul class="list-unstyled">
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Data Science</a></li>
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Data Analytics</a></li>
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Data Visualization</a></li>
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Python Developer</a></li>
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Web Scraper</a></li>
+							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Data
+									Science</a></li>
+							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Data
+									Analytics</a></li>
+							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Data
+									Visualization</a></li>
+							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Python
+									Developer</a></li>
+							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Web
+									Scraper</a></li>
 						</ul>
 					</div>
 				</div>
@@ -1079,7 +1115,7 @@
 								<li><span class="icon icon-map-marker"></span><span class="text">
 										Jaipur, Rajasthan, India 302020</span></li>
 								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 9024950465
-											</span></a></li>
+										</span></a></li>
 								<li><a href="#"><span class="icon icon-envelope"></span><span
 											class="text">vivekjangir@gmail.com</span></a></li>
 							</ul>
@@ -1092,8 +1128,9 @@
 
 					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved.  <i class="icon-heart color-danger" aria-hidden="true"></i>   
-						<a href="https://colorlib.com" target="_blank">   </a>
+						<script>document.write(new Date().getFullYear());</script> All rights reserved. <i
+							class="icon-heart color-danger" aria-hidden="true"></i>
+						<a href="https://colorlib.com" target="_blank"> </a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
@@ -1124,7 +1161,7 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- <script src="scroll.js"></script> -->
+	<!-- <script src="scroll.js"></script> -->
 
 	<script src="js/main.js"></script>
 

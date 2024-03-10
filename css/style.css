@@ -8742,8 +8742,8 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #ffbd39;
-    border: 1px solid #ffbd39 !important;
+    background: #c58b17 ;
+    border: 1px solid #c58b17  !important;
     color: #000000 !important; }
     .btn.btn-primary:hover {
       border: 1px solid #ffbd39 !important;
@@ -9719,6 +9719,10 @@ textarea.form-control {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+.interests {
+  margin-bottom:100px;
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -9778,3 +9782,6 @@ textarea.form-control {
 }
 
 /* .ri-store-line:before { content: "\f1a9"; } */
+/* 
+#counter-text{
+color:#c58b17 ;} */
